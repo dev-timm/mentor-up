@@ -1,4 +1,5 @@
 import Hero from './components/Hero';
+import LeadingCompanies from './components/LeadingCompanies';
 import Navbar from './components/Navbar';
 
 const App = () => {
@@ -6,6 +7,7 @@ const App = () => {
     <main>
       <Navbar />
       <Hero />
+      <LeadingCompanies />
     </main>
   );
 };
