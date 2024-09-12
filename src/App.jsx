@@ -1,15 +1,15 @@
-import Hero from './components/Hero';
-import LeadingCompanies from './components/LeadingCompanies';
-import Navbar from './components/Navbar';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import Landing from './pages/Landing';
+
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <Landing />,
+  },
+]);
 
 const App = () => {
-  return (
-    <main>
-      <Navbar />
-      <Hero />
-      <LeadingCompanies />
-    </main>
-  );
+  return <RouterProvider router={router} />;
 };
 
 export default App;
