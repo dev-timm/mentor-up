@@ -242,7 +242,7 @@ a {
 
 /* LEADING COMPANIES END */
 
-/* Error */
+/* ERROR */
 
 .error-page {
   display: flex;
@@ -262,4 +262,42 @@ a {
   flex-shrink: 0;
 }
 
-/* Error End */
+/* ERROR End */
+
+/* WHY MENTORUP */
+
+.usp-section {
+  display: flex;
+  padding: 100px 148px;
+  flex-direction: column;
+  align-items: center;
+  gap: 56px;
+  background-color: var(--background-bg-subtle, #fafafa);
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+  width: 100vw; /* Ensure the background takes the full viewport width */
+}
+
+.usp-items {
+  display: flex;
+  align-items: center;
+  gap: var(--height-size-md, 40px);
+}
+
+.usp-item {
+  display: flex;
+  width: 320px;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.usp-item-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  align-self: stretch;
+}
+
+/* WHY MENTORUP END */
