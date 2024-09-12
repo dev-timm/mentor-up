@@ -30,6 +30,7 @@ a {
 /* COMPONENTS */
 .btn-b1 {
   display: flex;
+  gap: 8px;
   height: var(--height-size-lg, 48px);
   padding: 8px var(--padding-padding--lg, 16px);
   justify-content: center;
