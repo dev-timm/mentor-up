@@ -25,13 +25,37 @@ html {
 
 /* STYLES */
 
+h2 {
+  color: var(--text-text-base, #14141a);
+  font-family: Sora;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px; /* 116.667% */
+  letter-spacing: -0.48px;
+}
+
 h4 {
+  color: var(--text-text-base, #14141a);
   font-family: Sora;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
   line-height: 20px; /* 125% */
   letter-spacing: -0.256px;
+}
+
+.p2 {
+  color: var(--text-text-base, #14141a);
+  font-family: 'Noto Sans';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+}
+
+.center-text {
+  text-align: center;
 }
 
 a {
@@ -44,6 +68,7 @@ a {
 /* COMPONENTS */
 .btn-b1 {
   display: flex;
+  width: fit-content;
   gap: 8px;
   height: var(--height-size-lg, 48px);
   padding: 8px var(--padding-padding--lg, 16px);
@@ -216,3 +241,25 @@ a {
 }
 
 /* LEADING COMPANIES END */
+
+/* Error */
+
+.error-page {
+  display: flex;
+  padding: 132px 0;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  background: var(--background-bg-main-container, #fff);
+}
+
+.error-content {
+  display: flex;
+  width: 577px;
+  flex-direction: column;
+  align-items: center;
+  gap: 37px;
+  flex-shrink: 0;
+}
+
+/* Error End */

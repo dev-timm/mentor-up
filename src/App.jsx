@@ -2,6 +2,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 import {
   BecomeMentor,
+  Error,
   FindMentor,
   HomeLayout,
   Landing,
@@ -13,6 +14,7 @@ const router = createBrowserRouter([
   {
     path: '/',
     element: <HomeLayout />,
+    errorElement: <Error />,
     children: [
       {
         index: true,
