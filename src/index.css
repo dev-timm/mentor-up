@@ -121,7 +121,6 @@ a {
 }
 
 .nav-link {
-  list-style-type: none;
   color: var(--text-text-base, #14141a);
   /* 💻 Paragraph/P3 */
   font-family: 'Noto Sans';

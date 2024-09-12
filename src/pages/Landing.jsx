@@ -6,7 +6,6 @@ import Navbar from '../components/Navbar';
 const Landing = () => {
   return (
     <>
-      <Navbar />
       <section className="hero">
         <div className="container hero-content">
           <div className="text-container">
