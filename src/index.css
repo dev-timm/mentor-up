@@ -301,3 +301,104 @@ a {
 }
 
 /* WHY MENTORUP END */
+
+/* HOW IT WORKS */
+
+.how-it-works {
+  display: flex;
+  padding: 100px 148px;
+  flex-direction: column;
+  align-items: center;
+  gap: 56px;
+  align-self: stretch;
+}
+
+.hiw-header {
+  display: flex;
+  width: 292px;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.hiw-tabs {
+  display: flex;
+  align-items: flex-start;
+  gap: 37px;
+  align-self: stretch;
+}
+
+.hiw-tab {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  outline: inherit;
+}
+
+.hiw-tab-active {
+  border-bottom: 2px #4b4bfa solid;
+}
+
+.hiw-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+  display: none;
+}
+
+.hiw-content-ative {
+  display: flex;
+}
+
+.hiw-steps {
+  display: flex;
+  width: 454px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--icon-5, 20px);
+}
+
+.hiw-step {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  align-self: stretch;
+}
+
+.hiw-step-number {
+  color: var(--text-text-brand, #4b4bfa);
+  font-family: Sora;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px; /* 112.5% */
+  letter-spacing: -0.64px;
+}
+
+.hiw-step-text {
+  color: var(--text-text-base, #14141a);
+  font-family: 'Noto Sans';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.hiw-step-heading {
+  color: var(--text-text-base, #14141a);
+  font-family: Sora;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px; /* 125% */
+  letter-spacing: -0.256px;
+}
+
+.hiw-content img {
+  width: 397px;
+}
+
+/* HOW IT WORKS END */
