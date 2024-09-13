@@ -7,6 +7,9 @@ import industryInsights from '../assets/illustrations/industry-insights.svg';
 import personalizedGuidance from '../assets/illustrations/personalized-guidance.svg';
 import hiwFindMentor from '../assets/how-it-works-find-mentor.png';
 import hiwBecomeMentor from '../assets/how-it-works-become-mentor.png';
+import star from '../assets/icons/star.svg';
+import user1 from '../assets/users/sebastian-jackson.png';
+import user2 from '../assets/users/jane-smith.png';
 
 import { useState } from 'react';
 
@@ -186,6 +189,60 @@ const Landing = () => {
             </div>
           </div>
           <img src={hiwBecomeMentor} alt="how it works mentor" />
+        </div>
+      </section>
+
+      {/* USER REVIEWS */}
+
+      <section className="user-reviews container">
+        <h2 className="center-text">
+          Real Experiences: <br />
+          Hear from Our Mentees
+        </h2>
+        <div className="reviews-content">
+          <div className="user-review">
+            <div className="stars">
+              <img src={star} alt={star} />
+              <img src={star} alt={star} />
+              <img src={star} alt={star} />
+              <img src={star} alt={star} />
+              <img src={star} alt={star} />
+            </div>
+            <p className="p3">
+              "The mentorship exceeded my expectations. My mentor provided
+              actionable advice and valuable insights that boosted my confidence
+              and career. Truly a game-changer!"
+            </p>
+            <div className="review-author">
+              <img src={user1} alt="user" />
+              <div className="author-details">
+                <p className="p3">Sebastian Jackson</p>
+                <p className="p4">Artist</p>
+              </div>
+            </div>
+          </div>
+          <div className="divider-line"></div>
+          <div className="user-review">
+            <div className="stars">
+              <img src={star} alt={star} />
+              <img src={star} alt={star} />
+              <img src={star} alt={star} />
+              <img src={star} alt={star} />
+              <img src={star} alt={star} />
+            </div>
+            <p className="p3">
+              "This mentorship program transformed my career. The guidance was
+              spot-on, and I felt supported every step of the way. Highly
+              recommend it to anyone seeking growth!"
+            </p>
+            <div className="review-author">
+              <img src={user2} alt="user" />
+              <div className="author-details">
+                <p className="p3">Jane L. Smith</p>
+                <p className="p4">Graphic Designer</p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </>
