@@ -20,6 +20,11 @@ const Landing = () => {
     setToggleState(index);
   };
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log('subscribed!');
+  };
+
   return (
     <>
       {/* HERO */}
@@ -244,6 +249,15 @@ const Landing = () => {
             </div>
           </div>
         </div>
+      </section>
+      <section className="newsletter container">
+        <h2 className="center-text">Join Our Newsletter</h2>
+        <form className="newsletter-form" onSubmit={handleSubmit}>
+          <input type="text" placeholder="Enter Email" />
+          <button type="submit" className="btn-secondary-medium">
+            Subscribe Now
+          </button>
+        </form>
       </section>
     </>
   );
