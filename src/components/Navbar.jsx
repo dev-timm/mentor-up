@@ -7,28 +7,30 @@ import logo from '../assets/logo.svg';
 
 const Navbar = () => {
   return (
-    <nav className={appStyles.container}>
-      <div className={styles.navContainer}>
-        <div className={styles.navMain}>
-          <NavLink to="/">
-            <img src={logo} />
-          </NavLink>
-          <div className={styles.navLinks}>
-            <NavLink to="/find-mentor" className={styles.navLink}>
-              Find Mentor
+    <nav>
+      <div className={appStyles.container}>
+        <div className={styles.navContainer}>
+          <div className={styles.navMain}>
+            <NavLink to="/">
+              <img src={logo} />
             </NavLink>
-            <NavLink to="/become-mentor" className={styles.navLink}>
-              Become Mentor
+            <div className={styles.navLinks}>
+              <NavLink to="/find-mentor" className={styles.navLink}>
+                Find Mentor
+              </NavLink>
+              <NavLink to="/become-mentor" className={styles.navLink}>
+                Become Mentor
+              </NavLink>
+            </div>
+          </div>
+          <div className={styles.navAction}>
+            <NavLink to="/sign-in" className={styles.navLink}>
+              Sign In
+            </NavLink>
+            <NavLink to="/sign-up" className={btnStyles.btnPrimaryMedium}>
+              Sign Up
             </NavLink>
           </div>
-        </div>
-        <div className={styles.navAction}>
-          <NavLink to="/sign-in" className={styles.navLink}>
-            Sign In
-          </NavLink>
-          <NavLink to="/sign-up" className={btnStyles.btnPrimaryMedium}>
-            Sign Up
-          </NavLink>
         </div>
       </div>
     </nav>
