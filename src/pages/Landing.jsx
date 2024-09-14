@@ -249,6 +249,9 @@ const Landing = () => {
             </div>
           </div>
         </div>
+        <NavLink to="/sign-up" className="btn-b1">
+          Sign Up Now <img src={arrowRight} alt="right arrow icon" />
+        </NavLink>
       </section>
       <section className="newsletter container">
         <h2 className="center-text">Join Our Newsletter</h2>
