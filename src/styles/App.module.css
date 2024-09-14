@@ -1,0 +1,84 @@
+/* ============= GLOBAL CSS =============== */
+
+/* GENERAL */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Sora:wght@100..800&display=swap');
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+} /*16px*/
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/* GENERAL END */
+
+/* STYLES */
+
+h2 {
+  color: var(--text-text-base, #14141a);
+  font-family: Sora;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px; /* 116.667% */
+  letter-spacing: -0.48px;
+}
+
+h4 {
+  color: var(--text-text-base, #14141a);
+  font-family: Sora;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px; /* 125% */
+  letter-spacing: -0.256px;
+}
+
+.p2 {
+  color: var(--text-text-base, #14141a);
+  font-family: 'Noto Sans';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+}
+
+.p3 {
+  color: var(--text-text-base, #14141a);
+  font-family: 'Noto Sans';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 142.857% */
+}
+
+.p4 {
+  color: var(--text-text-base, #14141a);
+  font-family: 'Noto Sans';
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px; /* 133.333% */
+}
+
+.centerText {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* STYLES END */

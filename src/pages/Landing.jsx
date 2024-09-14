@@ -1,4 +1,10 @@
+import styles from '../styles/Landing.module.css';
+import appStyles from '../styles/App.module.css';
+import formStyles from '../styles/Form.module.css';
+import btnStyles from '../styles/Button.module.css';
+
 import { NavLink } from 'react-router-dom';
+
 import heroImg from '../assets/hero-Img.png';
 import arrowRight from '../assets/icons/arrow-right.svg';
 import LeadingCompanies from '../components/LeadingCompanies';
@@ -29,9 +35,9 @@ const Landing = () => {
     <>
       {/* HERO */}
 
-      <section className="hero">
-        <div className="container hero-content">
-          <div className="text-container">
+      <section className={styles.hero}>
+        <div className={`${appStyles.container} ${styles.heroContent}`}>
+          <div className={styles.textContainer}>
             <h1>
               Unlock Your <span>Potential</span> with Expert Mentorship
             </h1>
@@ -39,64 +45,66 @@ const Landing = () => {
               Connect with industry leaders and receive personalized guidance to
               achieve your goals.
             </p>
-            <a href="/sign-up" className="btn-b1">
+            <a href="/sign-up" className={btnStyles.btnPrimaryLarge}>
               Find your Mentor <img src={arrowRight} alt="right arrow icon" />
             </a>
           </div>
-          <img src={heroImg} className="hero-img" alt="hero image" />
+          <img src={heroImg} className={styles.heroImg} alt="hero image" />
         </div>
       </section>
       <LeadingCompanies />
 
-      {/* USPS */}
+      {/* WHY MENTORUP */}
 
-      <section className="usp-section container">
-        <h2 className="center-text">Why Choose MentorUp</h2>
-        <div className="usp-items">
-          <div className="usp-item">
+      <section className={`${appStyles.container} ${styles.uspSection}`}>
+        <h2 className={appStyles.centerText}>Why Choose MentorUp</h2>
+        <div className={styles.uspItems}>
+          <div className={styles.uspItem}>
             <img src={personalizedGuidance} alt="personalized guidance" />
-            <div className="usp-item-tex center-text">
+            <div className={`${appStyles.centerText} ${styles.uspItemText}`}>
               <h4>Personalized Guidance</h4>
-              <p className="p2">
+              <p className={appStyles.p2}>
                 Tailored advice from seasoned professionals who understand your
                 goals.
               </p>
             </div>
           </div>
-          <div className="usp-item">
+          <div className={styles.uspItem}>
             <img src={industryInsights} alt="industry insights" />
-            <div className="usp-item-tex center-text">
+            <div className={`${appStyles.centerText} ${styles.uspItemText}`}>
               <h4>Industry Insights</h4>
-              <p className="p2">
+              <p className={appStyles.p2}>
                 Exclusive access to knowledge and trends from successful
                 industry experts.
               </p>
             </div>
           </div>
-          <div className="usp-item">
+          <div className={styles.uspItem}>
             <img src={flexibleLearning} alt="flexible learning" />
-            <div className="usp-item-tex center-text">
+            <div className={`${appStyles.centerText} ${styles.uspItemText}`}>
               <h4>Flexible Learning</h4>
-              <p className="p2">
+              <p className={appStyles.p2}>
                 Convenient, on-demand sessions that fit your schedule.
               </p>
             </div>
           </div>
         </div>
-        <NavLink to="/sign-up" className="btn-b1">
+        <NavLink to="/sign-up" className={btnStyles.btnPrimaryLarge}>
           Start Your Journey <img src={arrowRight} alt="right arrow icon" />
         </NavLink>
       </section>
 
       {/* HOW IT WORKS */}
 
-      <section className="how-it-works container">
-        <div className="hiw-header">
-          <h2 className="center-text">How It Works</h2>
-          <div className="hiw-tabs">
+      <section className={`${styles.howItWorks} ${appStyles.container}`}>
+        <div className={styles.hiwHeader}>
+          <h2 className={appStyles.centerText}>How It Works</h2>
+          <div className={styles.hiwTabs}>
             <button
               className={
-                toggleState === 1 ? 'p2 hiw-tab hiw-tab-active' : 'p2 hiw-tab'
+                toggleState === 1
+                  ? `${appStyles.p2} ${styles.hiwTab} ${styles.hiwTabActive}`
+                  : `${appStyles.p2} ${styles.hiwTab}`
               }
               onClick={() => toggleTab(1)}
             >
@@ -104,7 +112,9 @@ const Landing = () => {
             </button>
             <button
               className={
-                toggleState === 2 ? 'p2 hiw-tab hiw-tab-active' : 'p2 hiw-tab'
+                toggleState === 2
+                  ? `${appStyles.p2} ${styles.hiwTab} ${styles.hiwTabActive}`
+                  : `${appStyles.p2} ${styles.hiwTab}`
               }
               onClick={() => toggleTab(2)}
             >
@@ -114,38 +124,44 @@ const Landing = () => {
         </div>
         <div
           className={
-            toggleState === 1 ? 'hiw-content hiw-content-ative' : 'hiw-content'
+            toggleState === 1
+              ? `${styles.hiwContent} ${styles.hiwContentActive}`
+              : `${styles.hiwContent}`
           }
         >
-          <div className="hiw-steps">
-            <div className="hiw-step">
-              <p className="hiw-step-number">1</p>
-              <p className="hiw-step-text">
-                <span className="hiw-step-heading">Create an Account</span>
+          <div className={styles.hiwSteps}>
+            <div className={styles.hiwStep}>
+              <p className={styles.hiwStepNumber}>1</p>
+              <p className={styles.hiwStepText}>
+                <span className={styles.hiwStepHeading}>Create an Account</span>
                 <br /> Sign up by providing your basic information, such as
                 name, email, and password.
               </p>
             </div>
-            <div className="hiw-step">
-              <p className="hiw-step-number">2</p>
-              <p className="hiw-step-text">
-                <span className="hiw-step-heading">Choose a Mentor</span>
+            <div className={styles.hiwStep}>
+              <p className={styles.hiwStepNumber}>2</p>
+              <p className={styles.hiwStepText}>
+                <span className={styles.hiwStepHeading}>Choose a Mentor</span>
                 <br /> Browse through our list of mentors, read their profiles,
                 and select the one that best matches your needs.
               </p>
             </div>
-            <div className="hiw-step">
-              <p className="hiw-step-number">3</p>
-              <p className="hiw-step-text">
-                <span className="hiw-step-heading">Schedule a Session</span>
+            <div className={styles.hiwStep}>
+              <p className={styles.hiwStepNumber}>3</p>
+              <p className={styles.hiwStepText}>
+                <span className={styles.hiwStepHeading}>
+                  Schedule a Session
+                </span>
                 <br /> Pick a date and time that works for you from your chosen
                 mentor’s available slots.
               </p>
             </div>
-            <div className="hiw-step">
-              <p className="hiw-step-number">4</p>
-              <p className="hiw-step-text">
-                <span className="hiw-step-heading">Begin Your Journey</span>
+            <div className={styles.hiwStep}>
+              <p className={styles.hiwStepNumber}>4</p>
+              <p className={styles.hiwStepText}>
+                <span className={styles.hiwStepHeading}>
+                  Begin Your Journey
+                </span>
                 <br /> Attend your first session and start receiving
                 personalized guidance to achieve your goals.
               </p>
@@ -156,38 +172,46 @@ const Landing = () => {
 
         <div
           className={
-            toggleState === 2 ? 'hiw-content hiw-content-ative' : 'hiw-content'
+            toggleState === 2
+              ? `${styles.hiwContent} ${styles.hiwContentActive}`
+              : `${styles.hiwContent}`
           }
         >
-          <div className="hiw-steps">
-            <div className="hiw-step">
-              <p className="hiw-step-number">1</p>
-              <p className="hiw-step-text">
-                <span className="hiw-step-heading">Create Your Profile</span>
+          <div className={styles.hiwSteps}>
+            <div className={styles.hiwStep}>
+              <p className={styles.hiwStepNumber}>1</p>
+              <p className={styles.hiwStepText}>
+                <span className={styles.hiwStepHeading}>
+                  Create Your Profile
+                </span>
                 <br /> Sign up and fill in your details, including your
                 expertise, experience, and mentoring preferences.
               </p>
             </div>
-            <div className="hiw-step">
-              <p className="hiw-step-number">2</p>
-              <p className="hiw-step-text">
-                <span className="hiw-step-heading">Set Your Availability</span>
+            <div className={styles.hiwStep}>
+              <p className={styles.hiwStepNumber}>2</p>
+              <p className={styles.hiwStepText}>
+                <span className={styles.hiwStepHeading}>
+                  Set Your Availability
+                </span>
                 <br /> Choose your preferred mentoring schedule and the times
                 that work best for you.
               </p>
             </div>
-            <div className="hiw-step">
-              <p className="hiw-step-number">3</p>
-              <p className="hiw-step-text">
-                <span className="hiw-step-heading">Connect with Mentees</span>
+            <div className={styles.hiwStep}>
+              <p className={styles.hiwStepNumber}>3</p>
+              <p className={styles.hiwStepText}>
+                <span className={styles.hiwStepHeading}>
+                  Connect with Mentees
+                </span>
                 <br /> Browse mentee requests or let mentees find you based on
                 your profile and expertise.
               </p>
             </div>
-            <div className="hiw-step">
-              <p className="hiw-step-number">4</p>
-              <p className="hiw-step-text">
-                <span className="hiw-step-heading">Start Mentoring</span>
+            <div className={styles.hiwStep}>
+              <p className={styles.hiwStepNumber}>4</p>
+              <p className={styles.hiwStepText}>
+                <span className={styles.hiwStepHeading}>Start Mentoring</span>
                 <br /> Once connected, begin guiding your mentees through
                 personalized sessions.
               </p>
@@ -199,65 +223,68 @@ const Landing = () => {
 
       {/* USER REVIEWS */}
 
-      <section className="user-reviews container">
-        <h2 className="center-text">
+      <section className={`${styles.userReviews} ${appStyles.container}`}>
+        <h2 className={appStyles.centerText}>
           Real Experiences: <br />
           Hear from Our Mentees
         </h2>
-        <div className="reviews-content">
-          <div className="user-review">
-            <div className="stars">
+        <div className={styles.reviewsContent}>
+          <div className={styles.userReview}>
+            <div className={styles.stars}>
               <img src={star} alt={star} />
               <img src={star} alt={star} />
               <img src={star} alt={star} />
               <img src={star} alt={star} />
               <img src={star} alt={star} />
             </div>
-            <p className="p3">
+            <p className={appStyles.p3}>
               "The mentorship exceeded my expectations. My mentor provided
               actionable advice and valuable insights that boosted my confidence
               and career. Truly a game-changer!"
             </p>
-            <div className="review-author">
+            <div className={styles.reviewAuthor}>
               <img src={user1} alt="user" />
-              <div className="author-details">
-                <p className="p3">Sebastian Jackson</p>
-                <p className="p4">Artist</p>
+              <div className={styles.authorDetails}>
+                <p className={styles.authorName}>Sebastian Jackson</p>
+                <p className={styles.authorProfession}>Artist</p>
               </div>
             </div>
           </div>
-          <div className="divider-line"></div>
-          <div className="user-review">
-            <div className="stars">
+          <div className={styles.dividerLine}></div>
+          <div className={styles.userReview}>
+            <div className={styles.stars}>
               <img src={star} alt={star} />
               <img src={star} alt={star} />
               <img src={star} alt={star} />
               <img src={star} alt={star} />
               <img src={star} alt={star} />
             </div>
-            <p className="p3">
+            <p className={appStyles.p3}>
               "This mentorship program transformed my career. The guidance was
               spot-on, and I felt supported every step of the way. Highly
               recommend it to anyone seeking growth!"
             </p>
-            <div className="review-author">
+            <div className={styles.reviewAuthor}>
               <img src={user2} alt="user" />
-              <div className="author-details">
-                <p className="p3">Jane L. Smith</p>
-                <p className="p4">Graphic Designer</p>
+              <div className={styles.authorDetails}>
+                <p className={styles.authorName}>Jane L. Smith</p>
+                <p className={styles.authorProfession}>Graphic Designer</p>
               </div>
             </div>
           </div>
         </div>
-        <NavLink to="/sign-up" className="btn-b1">
+        <NavLink to="/sign-up" className={btnStyles.btnPrimaryLarge}>
           Sign Up Now <img src={arrowRight} alt="right arrow icon" />
         </NavLink>
       </section>
-      <section className="newsletter container">
-        <h2 className="center-text">Join Our Newsletter</h2>
-        <form className="newsletter-form" onSubmit={handleSubmit}>
+
+      {/* NEWSLETTER */}
+
+      <section className={`${styles.newsletter} ${appStyles.container}`}>
+        <h2 className={appStyles.centerText}>Join Our Newsletter</h2>
+        <form className={styles.newsletterForm} onSubmit={handleSubmit}>
           <input type="text" placeholder="Enter Email" />
-          <button type="submit" className="btn-secondary-medium">
+          <button type="submit" className={btnStyles.btnSecondaryMedium}>
             Subscribe Now
           </button>
         </form>

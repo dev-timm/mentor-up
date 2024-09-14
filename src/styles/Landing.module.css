@@ -1,0 +1,308 @@
+/* HERO */
+
+.hero {
+  background: url(../assets/hero-bg.svg);
+  background-size: cover; /* <------ */
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.heroContent {
+  display: flex;
+  padding: 100px 0px;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  align-self: stretch;
+}
+
+.textContainer {
+  display: flex;
+  width: 480px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.textContainer h1 {
+  align-self: stretch;
+  color: #000;
+  /* 💻 Headings/H1 */
+  font-family: Sora;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 50px; /* 112.5% */
+  letter-spacing: -0.64px;
+}
+
+.textContainer h1 span {
+  color: var(--text-text-brand, #4b4bfa);
+  /* 💻 Headings/H1 */
+  font-family: Sora;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: -0.64px;
+  text-decoration: underline;
+}
+
+.textContainer p {
+  color: var(--text-text-base, #14141a);
+  /* 💻 Paragraph/P1 */
+  font-family: 'Noto Sans';
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 140% */
+}
+
+.heroImg {
+  width: 500px;
+}
+
+/* HERO END */
+
+/* WHY MENTORUP */
+
+.uspSection {
+  display: flex;
+  padding: 100px 148px;
+  flex-direction: column;
+  align-items: center;
+  gap: 56px;
+  background-color: var(--background-bg-subtle, #fafafa);
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+  width: 100vw; /* Ensure the background takes the full viewport width */
+}
+
+.uspItems {
+  display: flex;
+  align-items: center;
+  gap: var(--height-size-md, 40px);
+}
+
+.uspItem {
+  display: flex;
+  width: 320px;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.uspItemText {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* WHY MENTORUP END */
+
+/* HOW IT WORKS */
+
+.howItWorks {
+  display: flex;
+  padding: 100px 148px;
+  flex-direction: column;
+  align-items: center;
+  gap: 56px;
+  align-self: stretch;
+}
+
+.hiwHeader {
+  display: flex;
+  width: 292px;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.hiwTabs {
+  display: flex;
+  align-items: flex-start;
+  gap: 37px;
+  align-self: stretch;
+}
+
+.hiwTab {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  outline: inherit;
+}
+
+.hiwTabActive {
+  border-bottom: 2px #4b4bfa solid;
+}
+
+.hiwContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+  display: none;
+}
+
+.hiwContentActive {
+  display: flex;
+}
+
+.hiwSteps {
+  display: flex;
+  width: 454px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--icon-5, 20px);
+}
+
+.hiwStep {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  align-self: stretch;
+}
+
+.hiwStepNumber {
+  color: var(--text-text-brand, #4b4bfa);
+  font-family: Sora;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px; /* 112.5% */
+  letter-spacing: -0.64px;
+}
+
+.hiwStepText {
+  color: var(--text-text-base, #14141a);
+  font-family: 'Noto Sans';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.hiwStepHeading {
+  color: var(--text-text-base, #14141a);
+  font-family: Sora;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px; /* 125% */
+  letter-spacing: -0.256px;
+}
+
+.hiwContent img {
+  width: 397px;
+}
+
+/* HOW IT WORKS END */
+
+/* USER REVIEWS */
+
+.userReviews {
+  display: flex;
+  padding: 100px 148px;
+  flex-direction: column;
+  align-items: center;
+  gap: 56px;
+  align-self: stretch;
+}
+
+.reviewsContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+}
+
+.userReview {
+  display: flex;
+  width: 350px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.stars {
+  display: flex;
+  align-items: center;
+  gap: var(--radius-1, 4px);
+}
+
+.reviewAuthor {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.authorDetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.authorName {
+  font-family: 'Noto Sans';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  color: var(--text-text-base, #14141a);
+}
+
+.authorProfession {
+  font-family: 'Noto Sans';
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  font-style: italic;
+  color: var(--text-text-subtle, #676773);
+}
+
+.reviewAuthor img {
+  width: 40px;
+  height: 40px;
+}
+
+.dividerLine {
+  width: 1px;
+  height: 128px;
+  background: var(--icon-icon-inactive, #919199);
+}
+
+/* USER REVIEWS END */
+
+/* NEWSLETTER */
+
+.newsletter {
+  display: flex;
+  padding: 100px 0px;
+  flex-direction: column;
+  align-items: center;
+  gap: 49px;
+  background: url(../assets/newsletter-bg.svg);
+  background-size: cover; /* <------ */
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+  width: 100vw; /* Ensure the background takes the full viewport width */
+}
+
+.newsletterForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  align-self: stretch;
+}
+
+.newsletterForm input {
+  width: 352px;
+  min-width: 200px;
+  max-width: 800px;
+}
+
+/* NEWSLETTER END */

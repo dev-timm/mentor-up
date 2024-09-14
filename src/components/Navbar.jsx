@@ -1,28 +1,32 @@
+import styles from '../styles/Navbar.module.css';
+import appStyles from '../styles/App.module.css';
+import btnStyles from '../styles/Button.module.css';
+
 import { NavLink } from 'react-router-dom';
 import logo from '../assets/logo.svg';
 
 const Navbar = () => {
   return (
-    <nav className="container">
-      <div className="nav-container">
-        <div className="nav-main">
+    <nav className={appStyles.container}>
+      <div className={styles.navContainer}>
+        <div className={styles.navMain}>
           <NavLink to="/">
-            <img src={logo} className="logo" />
+            <img src={logo} />
           </NavLink>
-          <div className="nav-links">
-            <NavLink to="/find-mentor" className="nav-link">
+          <div className={styles.navLinks}>
+            <NavLink to="/find-mentor" className={styles.navLink}>
               Find Mentor
             </NavLink>
-            <NavLink to="/become-mentor" className="nav-link">
+            <NavLink to="/become-mentor" className={styles.navLink}>
               Become Mentor
             </NavLink>
           </div>
         </div>
-        <div className="nav-action">
-          <NavLink to="/sign-in" className="nav-link">
+        <div className={styles.navAction}>
+          <NavLink to="/sign-in" className={styles.navLink}>
             Sign In
           </NavLink>
-          <NavLink to="/sign-up" className="btn-b2">
+          <NavLink to="/sign-up" className={btnStyles.btnPrimaryMedium}>
             Sign Up
           </NavLink>
         </div>

@@ -1,3 +1,6 @@
+import appStyles from '../styles/App.module.css';
+import styles from '../styles/Footer.module.css';
+
 import iconFacebook from '../assets/icons/icon-facebook.svg';
 import iconInstagram from '../assets/icons/icon-instagram.svg';
 import iconTiktok from '../assets/icons/icon-tiktok.svg';
@@ -5,9 +8,9 @@ import iconYoutube from '../assets/icons/icon-youtube.svg';
 
 const Footer = () => {
   return (
-    <footer className="footer-content container">
-      <p className="p3">© 2024 MyMentor</p>
-      <div className="footer-icons">
+    <footer className={`${appStyles.container} ${styles.footerContent}`}>
+      <p className={`${appStyles.p3}`}>© 2024 MyMentor</p>
+      <div className={`${styles.footerIcons}`}>
         <a href="https://www.instagram.com/">
           <img src={iconInstagram} alt="instagram icon" />
         </a>
