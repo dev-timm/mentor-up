@@ -6,6 +6,15 @@ import logoMicrosoft from './assets/logos/logo-microsoft.svg';
 import logoNetflix from './assets/logos/logo-netflix.svg';
 import logoYouTube from './assets/logos/logo-youtube.svg';
 
+import careerDevelopment from './assets/illustrations/career-development.svg';
+import creativeArtsAndDesign from './assets/illustrations/creative-arts-and-design.svg';
+import financeAndInvestment from './assets/illustrations/finance-and-investment.svg';
+import healthcareAndWellness from './assets/illustrations/healthcare-and-wellness.svg';
+import leadershipAndManagement from './assets/illustrations/leadership-and-management.svg';
+import marketingAndSales from './assets/illustrations/marketing-and-sales.svg';
+import personalGrowth from './assets/illustrations/personal-growth.svg';
+import techAndEngineering from './assets/illustrations/tech-and-engineering.svg';
+
 export const logos = [
   {
     id: 1,
@@ -41,5 +50,48 @@ export const logos = [
     id: 7,
     name: 'youtube',
     image: logoYouTube,
+  },
+];
+
+export const topCategories = [
+  {
+    id: 1,
+    name: 'Career Development',
+    image: careerDevelopment,
+  },
+  {
+    id: 2,
+    name: 'Creative Arts And Design',
+    image: creativeArtsAndDesign,
+  },
+  {
+    id: 3,
+    name: 'Finance & Investment',
+    image: financeAndInvestment,
+  },
+  {
+    id: 4,
+    name: 'Healthcare & Wellness',
+    image: healthcareAndWellness,
+  },
+  {
+    id: 5,
+    name: 'Leadership & Mgmt.',
+    image: leadershipAndManagement,
+  },
+  {
+    id: 6,
+    name: 'Marketing & Sales',
+    image: marketingAndSales,
+  },
+  {
+    id: 7,
+    name: 'Personal Growth',
+    image: personalGrowth,
+  },
+  {
+    id: 8,
+    name: 'Tech & Engineering',
+    image: techAndEngineering,
   },
 ];

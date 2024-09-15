@@ -38,3 +38,35 @@
 .heroImg {
   width: 1040px;
 }
+
+.topCategories {
+  display: flex;
+  padding: 100px 148px;
+  flex-direction: column;
+  align-items: center;
+  gap: 56px;
+  align-self: stretch;
+}
+
+.categories {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-content: flex-start;
+  row-gap: 28px;
+  align-self: stretch;
+  flex-wrap: wrap;
+}
+
+.category {
+  display: flex;
+  width: 184px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.category p {
+  font-weight: 700;
+  width: fit-content;
+}
