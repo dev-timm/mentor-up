@@ -5,7 +5,7 @@ import btnStyles from '../styles/Button.module.css';
 
 import { NavLink } from 'react-router-dom';
 
-import heroImg from '../assets/hero-Img.png';
+import heroImg from '../assets/landing-hero.png';
 import arrowRight from '../assets/icons/arrow-right.svg';
 import LeadingCompanies from '../components/LeadingCompanies';
 import flexibleLearning from '../assets/illustrations/flexible-learning.svg';

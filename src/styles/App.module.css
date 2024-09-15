@@ -25,6 +25,16 @@ html {
 
 /* STYLES */
 
+h1 {
+  color: var(--text-text-base, #14141a);
+  font-family: Sora;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px; /* 112.5% */
+  letter-spacing: -0.64px;
+}
+
 h2 {
   color: var(--text-text-base, #14141a);
   font-family: Sora;
@@ -43,6 +53,15 @@ h4 {
   font-weight: 600;
   line-height: 20px; /* 125% */
   letter-spacing: -0.256px;
+}
+
+.p1 {
+  color: var(--text-text-base, #14141a);
+  font-family: 'Noto Sans';
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 140% */
 }
 
 .p2 {
