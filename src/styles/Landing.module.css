@@ -246,7 +246,7 @@
 
 .authorName {
   font-family: 'Noto Sans';
-  font-size: 14px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 700;
   color: var(--text-text-base, #14141a);
@@ -254,7 +254,7 @@
 
 .authorProfession {
   font-family: 'Noto Sans';
-  font-size: 12px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 400;
   font-style: italic;

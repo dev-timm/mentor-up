@@ -238,7 +238,7 @@ const Landing = () => {
               <img src={star} alt={star} />
               <img src={star} alt={star} />
             </div>
-            <p className={appStyles.p3}>
+            <p className={appStyles.p2}>
               "The mentorship exceeded my expectations. My mentor provided
               actionable advice and valuable insights that boosted my confidence
               and career. Truly a game-changer!"
@@ -260,7 +260,7 @@ const Landing = () => {
               <img src={star} alt={star} />
               <img src={star} alt={star} />
             </div>
-            <p className={appStyles.p3}>
+            <p className={appStyles.p2}>
               "This mentorship program transformed my career. The guidance was
               spot-on, and I felt supported every step of the way. Highly
               recommend it to anyone seeking growth!"
