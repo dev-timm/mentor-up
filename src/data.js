@@ -15,6 +15,11 @@ import marketingAndSales from './assets/illustrations/marketing-and-sales.svg';
 import personalGrowth from './assets/illustrations/personal-growth.svg';
 import techAndEngineering from './assets/illustrations/tech-and-engineering.svg';
 
+import aClarke from './assets/mentors/mentor-alexandra-clarke.png';
+import dTurner from './assets/mentors/mentor-david-turner.png';
+import eCarter from './assets/mentors/mentor-emily-carter.png';
+import rBaker from './assets/mentors/mentor-robert-baker.png';
+
 export const logos = [
   {
     id: 1,
@@ -93,5 +98,48 @@ export const topCategories = [
     id: 8,
     name: 'Tech & Engineering',
     image: techAndEngineering,
+  },
+];
+
+export const mentorList = [
+  {
+    id: 1,
+    name: `Alexandra Clark`,
+    position: 'Senior Marketing Strategist',
+    experience:
+      'Jane has over 15 years of experience in digital marketing, specializing in brand development and strategic campaigns for Fortune 500 companies.',
+    reason:
+      'I’m passionate about helping others navigate the complexities of marketing and achieve their career goals. Seeing my mentees succeed is incredibly rewarding.',
+    image: aClarke,
+  },
+  {
+    id: 2,
+    name: `David Turner`,
+    position: 'Data Science Expert',
+    experience:
+      'David has over 10 years of experience in data science and machine learning, leading projects for top tech companies and mentoring professionals transitioning into the field.',
+    reason:
+      'I love sharing my knowledge and helping others build the technical skills needed to succeed in data science. Watching my mentees grow gives me great satisfaction.',
+    image: dTurner,
+  },
+  {
+    id: 3,
+    name: `Emily Carter`,
+    position: 'Leadership Development Coach',
+    experience:
+      'With over 12 years of experience in corporate leadership training, Emily has coached executives and managers across industries to enhance their leadership skills and team performance.',
+    reason:
+      'I’m passionate about helping leaders unlock their full potential. Watching my mentees grow into confident, capable leaders is the most fulfilling part of mentoring.',
+    image: eCarter,
+  },
+  {
+    id: 4,
+    name: `Robert Baker `,
+    position: 'Product Management Expert',
+    experience:
+      'Robert has over 8 years of experience in product management, leading successful product launches at both tech startups and large corporations.',
+    reason:
+      'I mentor because I believe in sharing practical knowledge that helps aspiring product managers build successful careers and impactful products.',
+    image: rBaker,
   },
 ];

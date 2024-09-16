@@ -45,9 +45,10 @@ const Landing = () => {
               Connect with industry leaders and receive personalized guidance to
               achieve your goals.
             </p>
-            <a href="/sign-up" className={btnStyles.btnPrimaryLarge}>
+
+            <NavLink to="/sign-up" className={btnStyles.btnPrimaryLarge}>
               Find your Mentor <img src={arrowRight} alt="right arrow icon" />
-            </a>
+            </NavLink>
           </div>
           <img src={heroImg} className={styles.heroImg} alt="hero image" />
         </div>
