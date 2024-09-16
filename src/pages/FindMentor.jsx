@@ -14,9 +14,13 @@ import { NavLink } from 'react-router-dom';
 import { mentorList } from '../data';
 import { useEffect, useState } from 'react';
 
+import { customerQuestions } from '../data';
+import Questions from '../components/Questions';
+
 const FindMentor = () => {
   const [mentors, setMentors] = useState(mentorList);
   const [currentMentor, setCurrentMentor] = useState(0);
+  const [questions, setQuestions] = useState(customerQuestions);
 
   const prevSLide = () => {
     setCurrentMentor((oldMentor) => {
@@ -145,6 +149,8 @@ const FindMentor = () => {
           </div>
         </div>
       </section>
+
+      <Questions questions={questions} />
     </>
   );
 };

@@ -143,3 +143,31 @@ export const mentorList = [
     image: rBaker,
   },
 ];
+
+export const customerQuestions = [
+  {
+    id: 1,
+    title: 'How do I choose the right mentor?',
+    info: 'Start by identifying your goals and areas of interest. Then, browse our mentor profiles, focusing on their expertise, experience, and reviews from other mentees to find the best match for your needs.',
+  },
+  {
+    id: 2,
+    title: 'What can I expect from a mentorship session?',
+    info: 'During a session, you can expect personalized guidance, actionable advice, and support tailored to your goals. Sessions typically focus on problem-solving, skill development, and career strategy.',
+  },
+  {
+    id: 3,
+    title: 'How often can I schedule mentorship sessions?',
+    info: `The frequency of sessions depends on your mentor's availability and your personal needs. Some mentees opt for weekly sessions, while others prefer bi-weekly or monthly meetings.`,
+  },
+  {
+    id: 4,
+    title: 'Are the mentorship sessions conducted online?',
+    info: 'Yes, all sessions are conducted online through video calls, allowing you to connect with your mentor from anywhere in the world at a time that works best for you.',
+  },
+  {
+    id: 5,
+    title: 'What if I’m not satisfied with my mentor?',
+    info: `If you're not fully satisfied, you can request to switch mentors at any time. Our goal is to ensure you have the best possible experience, so we're here to help you find the right fit.`,
+  },
+];
