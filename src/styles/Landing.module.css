@@ -38,11 +38,6 @@
 
 .textContainer h1 span {
   color: var(--text-text-brand, #4b4bfa);
-  /* 💻 Headings/H1 */
-  font-family: Sora;
-  font-style: normal;
-  font-weight: 700;
-  letter-spacing: -0.64px;
   text-decoration: underline;
 }
 

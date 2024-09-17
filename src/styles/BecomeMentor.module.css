@@ -1,0 +1,38 @@
+.hero {
+  background: url(../assets/become-mentor-hero-bg.svg);
+  background-size: cover; /* <------ */
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.heroContent {
+  display: flex;
+  padding: 100px 148px;
+  align-items: center;
+  align-self: stretch;
+}
+
+.heroImg {
+  width: 520px;
+}
+
+.heroInfo {
+  display: flex;
+  width: 551px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--height-size-md, 40px);
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  align-self: stretch;
+}
+
+.textContainer h1 span {
+  color: var(--text-text-brand, #4b4bfa);
+  text-decoration: underline;
+}
