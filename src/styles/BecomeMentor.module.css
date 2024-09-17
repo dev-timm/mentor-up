@@ -1,3 +1,5 @@
+/* HERO */
+
 .hero {
   background: url(../assets/become-mentor-hero-bg.svg);
   background-size: cover; /* <------ */
@@ -35,4 +37,35 @@
 .textContainer h1 span {
   color: var(--text-text-brand, #4b4bfa);
   text-decoration: underline;
+}
+
+/* HERO END */
+
+/* MENTOR CHECKLIST */
+
+/* MENTOR CHECKLIST END */
+
+.mentorChecklist {
+  display: flex;
+  padding: 100px 0;
+  flex-direction: column;
+  align-items: center;
+  gap: 56px;
+  align-self: stretch;
+}
+
+.checklistContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 44px;
+  flex-wrap: wrap;
+}
+
+.checklistItem {
+  display: flex;
+  width: 570px;
+  max-width: 600px;
+  align-items: center;
+  gap: 16px;
 }
