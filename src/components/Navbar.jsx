@@ -12,7 +12,7 @@ const Navbar = () => {
         <div className={styles.navContainer}>
           <div className={styles.navMain}>
             <NavLink to="/">
-              <img src={logo} />
+              <img src={logo} className={styles.logo} alt="logo" />
             </NavLink>
             <div className={styles.navLinks}>
               <NavLink to="/find-mentor" className={styles.navLink}>
