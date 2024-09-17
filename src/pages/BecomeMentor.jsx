@@ -117,7 +117,7 @@ const BecomeMentor = () => {
 
       {/* MEET OUR MENTEES */}
 
-      <section className={styles.meetMentee}>
+      <section className={styles.meetMentees}>
         <div className={appStyles.container}>
           <h2 className={appStyles.centerText}>Meet Our Mentees</h2>
           <div className={styles.menteeContainer}>
