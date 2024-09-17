@@ -219,3 +219,31 @@ export const customerQuestions = [
     info: `If you're not fully satisfied, you can request to switch mentors at any time. Our goal is to ensure you have the best possible experience, so we're here to help you find the right fit.`,
   },
 ];
+
+export const mentorQuestions = [
+  {
+    id: 1,
+    title: 'How much time do I need to commit as a mentor?',
+    info: 'The time commitment is flexible and depends on your availability. You can set your own schedule and decide how many mentees you would like to take on.',
+  },
+  {
+    id: 2,
+    title: 'Do I get compensated for mentoring',
+    info: 'Yes, mentors typically receive compensation for their time, with rates varying based on experience and expertise. You can set your own rates.',
+  },
+  {
+    id: 3,
+    title: 'What kind of support will I receive as a mentor?',
+    info: `You'll have access to resources, tools, and a support team to help manage mentee relationships, schedule sessions, and track progress.`,
+  },
+  {
+    id: 4,
+    title: 'How are mentees matched with mentors?',
+    info: 'Mentees select mentors based on their needs, goals, and the mentor’s expertise. Your profile will highlight your experience and skills to help mentees find the right match.',
+  },
+  {
+    id: 5,
+    title: 'Can I choose which mentees I work with?',
+    info: `Yes, you have full control over accepting or declining mentees based on their goals, needs, and your availability.`,
+  },
+];

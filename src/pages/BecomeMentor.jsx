@@ -13,9 +13,13 @@ import arrowRight from '../assets/icons/arrow-right.svg';
 import heroImg from '../assets/become-mentor-hero.png';
 import checklistCheck from '../assets/icons/checklist-check.svg';
 
+import { mentorQuestions } from '../data';
+import Questions from '../components/Questions';
+
 const BecomeMentor = () => {
   const [mentees, setMentees] = useState(menteeList);
   const [currentMentee, setCurrentMentee] = useState(0);
+  const [questions, setQuestions] = useState(mentorQuestions);
 
   const prevSLide = () => {
     setCurrentMentee((oldMentee) => {
@@ -176,6 +180,7 @@ const BecomeMentor = () => {
           </div>
         </div>
       </section>
+      <Questions questions={questions} />
     </>
   );
 };
