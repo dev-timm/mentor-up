@@ -69,3 +69,85 @@
   align-items: center;
   gap: 16px;
 }
+
+/* MEET OUR MENTEES */
+
+.meetMentees {
+  display: flex;
+  padding: 100px 148px;
+  flex-direction: column;
+  align-items: center;
+  background: var(--background-bg-page-body, #fafafa);
+  overflow: hidden;
+}
+
+.menteeContainer {
+  margin: 0 auto;
+  margin-top: 56px;
+  width: 80vw;
+  max-width: 1000px;
+  position: relative;
+  height: 450px;
+  overflow: hidden;
+}
+
+.menteeSlide {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  gap: 24px;
+  transition: 0.3s ease-in-out all;
+}
+
+.menteeSlide img {
+  width: 397px;
+}
+
+.menteeDetails {
+  display: flex;
+  width: 542px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  flex-shrink: 0;
+}
+
+.menteeText {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  align-items: flex-start;
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 200px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out all;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
+.dotsStyles {
+  display: flex;
+  justify-content: center;
+}
+
+.dotStyles {
+  margin: 0 3px;
+  cursor: pointer;
+  font: 20px;
+}
+
+/* MEET OUR MENTEES END */

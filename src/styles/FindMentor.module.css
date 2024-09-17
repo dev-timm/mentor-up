@@ -128,8 +128,6 @@
   align-items: flex-start;
 }
 
-/* MEET OUR MENTORS END */
-
 .prev,
 .next {
   position: absolute;
@@ -156,3 +154,5 @@
   cursor: pointer;
   font: 20px;
 }
+
+/* MEET OUR MENTORS END */

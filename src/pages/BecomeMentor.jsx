@@ -1,14 +1,44 @@
+import { useEffect, useState } from 'react';
 import { NavLink } from 'react-router-dom';
+
+import { menteeList } from '../data';
 
 import styles from '../styles/BecomeMentor.module.css';
 import appStyles from '../styles/App.module.css';
 import btnStyles from '../styles/Button.module.css';
 
-import heroImg from '../assets/become-mentor-hero.png';
+import chevronRight from '../assets/icons/chevron-right.svg';
+import chevronLeft from '../assets/icons/chevron-left.svg';
 import arrowRight from '../assets/icons/arrow-right.svg';
+import heroImg from '../assets/become-mentor-hero.png';
 import checklistCheck from '../assets/icons/checklist-check.svg';
 
 const BecomeMentor = () => {
+  const [mentees, setMentees] = useState(menteeList);
+  const [currentMentee, setCurrentMentee] = useState(0);
+
+  const prevSLide = () => {
+    setCurrentMentee((oldMentee) => {
+      const result = (oldMentee - 1 + mentees.length) % mentees.length;
+      return result;
+    });
+  };
+  const nextSLide = () => {
+    setCurrentMentee((oldMentee) => {
+      const result = (oldMentee + 1) % mentees.length;
+      return result;
+    });
+  };
+
+  useEffect(() => {
+    let sliderId = setInterval(() => {
+      nextSLide();
+    }, 10000);
+    return () => {
+      clearInterval(sliderId);
+    };
+  }, [currentMentee]);
+
   return (
     <>
       {/* HERO */}
@@ -81,6 +111,68 @@ const BecomeMentor = () => {
               Willingness to Share: Openness to discussing challenges,
               successes, and lessons learned.
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* MEET OUR MENTEES */}
+
+      <section className={styles.meetMentee}>
+        <div className={appStyles.container}>
+          <h2 className={appStyles.centerText}>Meet Our Mentees</h2>
+          <div className={styles.menteeContainer}>
+            {mentees.map((mentee, menteeIndex) => {
+              const { id, name, mentorship, background, reason, image } =
+                mentee;
+              return (
+                <article
+                  className={styles.menteeSlide}
+                  style={{
+                    transform: `translateX(${
+                      100 * (menteeIndex - currentMentee)
+                    }%)`,
+                    opacity: menteeIndex === currentMentee ? 1 : 0,
+                    visibility:
+                      menteeIndex === currentMentee ? 'visible' : 'hidden',
+                  }}
+                  key={id}
+                >
+                  <img src={image} alt="mentee image" />
+                  <div className={styles.menteeDetails}>
+                    <div className={styles.menteeText}>
+                      <h5>Name</h5>
+                      <p className={appStyles.p2}>{name}</p>
+                    </div>
+                    <div className={styles.menteeText}>
+                      <h5>Mentorship Focus</h5>
+                      <p className={appStyles.p2}>{mentorship}</p>
+                    </div>
+                    <div className={styles.menteeText}>
+                      <h5>Background</h5>
+                      <p className={appStyles.p2}>{background}</p>
+                    </div>
+                    <div className={styles.menteeText}>
+                      <h5>Why She Chose MentorUp</h5>
+                      <p className={appStyles.p2}>{reason}</p>
+                    </div>
+                  </div>
+                </article>
+              );
+            })}
+            <button
+              type="button"
+              className={`${btnStyles.iconBtnMedium} ${styles.prev}`}
+              onClick={prevSLide}
+            >
+              <img src={chevronLeft} alt="button" />
+            </button>
+            <button
+              type="button"
+              className={`${btnStyles.iconBtnMedium} ${styles.next}`}
+              onClick={nextSLide}
+            >
+              <img src={chevronRight} alt="button" />
+            </button>
           </div>
         </div>
       </section>

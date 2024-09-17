@@ -19,6 +19,10 @@ import aClarke from './assets/mentors/mentor-alexandra-clarke.png';
 import dTurner from './assets/mentors/mentor-david-turner.png';
 import eCarter from './assets/mentors/mentor-emily-carter.png';
 import rBaker from './assets/mentors/mentor-robert-baker.png';
+import dRodriguez from './assets/mentees/mentee-daniel-rodriguez.png';
+import eCollins from './assets/mentees/mentee-emma-collins.png';
+import lDavis from './assets/mentees/mentee-liam-davis.png';
+import oMartinez from './assets/mentees/mentee-olivia-martinez.png';
 
 export const logos = [
   {
@@ -141,6 +145,50 @@ export const mentorList = [
     reason:
       'I mentor because I believe in sharing practical knowledge that helps aspiring product managers build successful careers and impactful products.',
     image: rBaker,
+  },
+];
+
+export const menteeList = [
+  {
+    id: 1,
+    name: `Olivia Martinez`,
+    mentorship:
+      'Leadership Development, Team Management, Strategic Decision-Making',
+    background:
+      'Olivia is an experienced HR professional stepping into a leadership role. She sought mentorship to develop her leadership style and effectively manage cross-functional teams.',
+    reason:
+      '"Stepping into a leadership position was challenging, and I needed support in refining my management skills. The mentorship has been a game-changer for my confidence and effectiveness as a leader."',
+    image: oMartinez,
+  },
+  {
+    id: 2,
+    name: `Liam Davis`,
+    mentorship: 'Data Science, Machine Learning, Big Data Analytics',
+    background:
+      'Liam is an entry-level data analyst passionate about transitioning into data science. He sought mentorship to gain expertise in machine learning and advance his career in the tech industry.',
+    reason:
+      '"I was looking for a mentor who could help me bridge the gap between data analysis and machine learning. The hands-on guidance I’ve received has accelerated my progress."',
+    image: lDavis,
+  },
+  {
+    id: 3,
+    name: `Emma Collins`,
+    mentorship: 'Entrepreneurship, Business Strategy, Marketing',
+    background:
+      'Emma is a small business owner looking to expand her company. She sought mentorship to refine her business strategy and marketing approach for scaling her operations.',
+    reason:
+      '"As an entrepreneur, I needed a mentor who could help me take my business to the next level. The mentorship has provided invaluable insights and practical advice for growth."',
+    image: eCollins,
+  },
+  {
+    id: 4,
+    name: `Daniel Rodriguez`,
+    mentorship: 'Software Engineering, Coding Best Practices, Career Growth',
+    background:
+      'Daniel is a self-taught developer looking to advance his career in software engineering. With a solid foundation in programming, he sought mentorship to improve his coding practices and navigate the tech industry.',
+    reason:
+      '"I needed guidance from someone with real-world experience to refine my skills and progress faster. My mentor has been instrumental in helping me grow technically and professionally."',
+    image: dRodriguez,
   },
 ];
 
