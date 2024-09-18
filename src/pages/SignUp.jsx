@@ -18,11 +18,11 @@ const SignUp = () => {
           <input type="text" placeholder="Enter username" required />
         </div>
         <div className={styles.formItem}>
-          <h5>Username</h5>
+          <h5>Password</h5>
           <input type="password" placeholder="Enter username" required />
         </div>
         <div className={styles.formItem}>
-          <h5>Username</h5>
+          <h5>Confirm Password</h5>
           <input type="password" placeholder="Enter username" required />
         </div>
         <button type="submit" className={btnStyles.btnPrimaryLarge}>
