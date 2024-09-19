@@ -125,10 +125,27 @@
   padding: 0;
   cursor: pointer;
   outline: inherit;
+  position: relative;
+  display: inline-block;
 }
 
-.hiwTabActive {
-  border-bottom: 2px #4b4bfa solid;
+.hiwTab::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 40%;
+  height: 2px;
+  background-color: transparent;
+  border-bottom: 2px solid #3636d9;
+  transform: scaleX(0);
+  transform-origin: bottom left;
+  transition: transform 0.3s ease;
+}
+
+.hiwTab:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 .hiwContent {
