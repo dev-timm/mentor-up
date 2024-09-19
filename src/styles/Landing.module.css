@@ -112,24 +112,30 @@
   gap: 16px;
 }
 
-.hiwTabs {
+.tabs {
   display: flex;
   align-items: flex-start;
   gap: 37px;
   align-self: stretch;
 }
 
-.hiwTab {
-  background: none;
-  border: none;
-  padding: 0;
-  cursor: pointer;
-  outline: inherit;
+.tab {
+  color: var(--text-text-base, #14141a);
+  font-family: 'Noto Sans';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
   position: relative;
   display: inline-block;
+  padding-bottom: 3px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
 }
 
-.hiwTab::after {
+.tab::after {
   content: '';
   position: absolute;
   left: 0;
@@ -143,12 +149,12 @@
   transition: transform 0.3s ease;
 }
 
-.hiwTab:hover::after {
+.tab:hover::after,
+.active::after {
   transform: scaleX(1);
-  transform-origin: bottom left;
 }
 
-.hiwContent {
+.tabContent {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -156,11 +162,11 @@
   display: none;
 }
 
-.hiwContentActive {
+.tabContentActive {
   display: flex;
 }
 
-.hiwSteps {
+.tabSteps {
   display: flex;
   width: 454px;
   flex-direction: column;
@@ -168,7 +174,7 @@
   gap: var(--icon-5, 20px);
 }
 
-.hiwStep {
+.tabStep {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -176,7 +182,7 @@
   align-self: stretch;
 }
 
-.hiwStepNumber {
+.tabStepNumber {
   color: var(--text-text-brand, #4b4bfa);
   font-family: Sora;
   font-size: 32px;
@@ -186,7 +192,7 @@
   letter-spacing: -0.64px;
 }
 
-.hiwStepText {
+.tabStepText {
   color: var(--text-text-base, #14141a);
   font-family: 'Noto Sans';
   font-size: 16px;
@@ -195,7 +201,7 @@
   line-height: 24px;
 }
 
-.hiwStepHeading {
+.tabStepHeading {
   color: var(--text-text-base, #14141a);
   font-family: Sora;
   font-size: 16px;
@@ -205,7 +211,7 @@
   letter-spacing: -0.256px;
 }
 
-.hiwContent img {
+.tabContent img {
   width: 397px;
 }
 

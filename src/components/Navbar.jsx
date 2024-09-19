@@ -15,16 +15,31 @@ const Navbar = () => {
               <img src={logo} className={styles.logo} alt="logo" />
             </NavLink>
             <div className={styles.navLinks}>
-              <NavLink to="/find-mentor" className={`${styles.navLink}`}>
+              <NavLink
+                to="/find-mentor"
+                className={({ isActive }) =>
+                  `${styles.navLink} ${isActive ? styles.active : ''}`
+                }
+              >
                 Find Mentor
               </NavLink>
-              <NavLink to="/become-mentor" className={styles.navLink}>
+              <NavLink
+                to="/become-mentor"
+                className={({ isActive }) =>
+                  `${styles.navLink} ${isActive ? styles.active : ''}`
+                }
+              >
                 Become Mentor
               </NavLink>
             </div>
           </div>
           <div className={styles.navAction}>
-            <NavLink to="/sign-in" className={styles.navLink}>
+            <NavLink
+              to="/sign-in"
+              className={({ isActive }) =>
+                `${styles.navLink} ${isActive ? styles.active : ''}`
+              }
+            >
               Sign In
             </NavLink>
             <NavLink to="/sign-up" className={btnStyles.btnPrimaryMedium}>

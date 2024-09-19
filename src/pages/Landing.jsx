@@ -20,10 +20,11 @@ import user2 from '../assets/users/jane-smith.png';
 import { useState } from 'react';
 
 const Landing = () => {
-  const [toggleState, setToggleState] = useState(1);
+  const [toggleState, setToggleState] = useState(1); // Manages which tab is active
 
+  // Function to handle tab switching
   const toggleTab = (index) => {
-    setToggleState(index);
+    setToggleState(index); // Set active tab based on index
   };
 
   const handleSubmit = (e) => {
@@ -100,12 +101,12 @@ const Landing = () => {
       <section className={`${styles.howItWorks} ${appStyles.container}`}>
         <div className={styles.hiwHeader}>
           <h2 className={appStyles.centerText}>How It Works</h2>
-          <div className={styles.hiwTabs}>
+          <div className={styles.tabs}>
             <button
               className={
                 toggleState === 1
-                  ? `${appStyles.p2} ${styles.hiwTab} ${styles.hiwTabActive}`
-                  : `${appStyles.p2} ${styles.hiwTab}`
+                  ? `${styles.tab} ${styles.active}`
+                  : `${styles.tab}`
               }
               onClick={() => toggleTab(1)}
             >
@@ -114,8 +115,8 @@ const Landing = () => {
             <button
               className={
                 toggleState === 2
-                  ? `${appStyles.p2} ${styles.hiwTab} ${styles.hiwTabActive}`
-                  : `${appStyles.p2} ${styles.hiwTab}`
+                  ? `${styles.tab} ${styles.active}`
+                  : `${styles.tab}`
               }
               onClick={() => toggleTab(2)}
             >
@@ -126,41 +127,41 @@ const Landing = () => {
         <div
           className={
             toggleState === 1
-              ? `${styles.hiwContent} ${styles.hiwContentActive}`
-              : `${styles.hiwContent}`
+              ? `${styles.tabContent} ${styles.tabContentActive}`
+              : `${styles.tabContent}`
           }
         >
-          <div className={styles.hiwSteps}>
-            <div className={styles.hiwStep}>
-              <p className={styles.hiwStepNumber}>1</p>
-              <p className={styles.hiwStepText}>
-                <span className={styles.hiwStepHeading}>Create an Account</span>
+          <div className={styles.tabSteps}>
+            <div className={styles.tabStep}>
+              <p className={styles.tabStepNumber}>1</p>
+              <p className={styles.tabStepText}>
+                <span className={styles.tabStepHeading}>Create an Account</span>
                 <br /> Sign up by providing your basic information, such as
                 name, email, and password.
               </p>
             </div>
-            <div className={styles.hiwStep}>
-              <p className={styles.hiwStepNumber}>2</p>
-              <p className={styles.hiwStepText}>
-                <span className={styles.hiwStepHeading}>Choose a Mentor</span>
+            <div className={styles.tabStep}>
+              <p className={styles.tabStepNumber}>2</p>
+              <p className={styles.tabStepText}>
+                <span className={styles.tabStepHeading}>Choose a Mentor</span>
                 <br /> Browse through our list of mentors, read their profiles,
                 and select the one that best matches your needs.
               </p>
             </div>
-            <div className={styles.hiwStep}>
-              <p className={styles.hiwStepNumber}>3</p>
-              <p className={styles.hiwStepText}>
-                <span className={styles.hiwStepHeading}>
+            <div className={styles.tabStep}>
+              <p className={styles.tabStepNumber}>3</p>
+              <p className={styles.tabStepText}>
+                <span className={styles.tabStepHeading}>
                   Schedule a Session
                 </span>
                 <br /> Pick a date and time that works for you from your chosen
                 mentor’s available slots.
               </p>
             </div>
-            <div className={styles.hiwStep}>
-              <p className={styles.hiwStepNumber}>4</p>
-              <p className={styles.hiwStepText}>
-                <span className={styles.hiwStepHeading}>
+            <div className={styles.tabStep}>
+              <p className={styles.tabStepNumber}>4</p>
+              <p className={styles.tabStepText}>
+                <span className={styles.tabStepHeading}>
                   Begin Your Journey
                 </span>
                 <br /> Attend your first session and start receiving
@@ -174,45 +175,45 @@ const Landing = () => {
         <div
           className={
             toggleState === 2
-              ? `${styles.hiwContent} ${styles.hiwContentActive}`
-              : `${styles.hiwContent}`
+              ? `${styles.tabContent} ${styles.tabContentActive}`
+              : `${styles.tabContent}`
           }
         >
-          <div className={styles.hiwSteps}>
-            <div className={styles.hiwStep}>
-              <p className={styles.hiwStepNumber}>1</p>
-              <p className={styles.hiwStepText}>
-                <span className={styles.hiwStepHeading}>
+          <div className={styles.tabSteps}>
+            <div className={styles.tabStep}>
+              <p className={styles.tabStepNumber}>1</p>
+              <p className={styles.tabStepText}>
+                <span className={styles.tabStepHeading}>
                   Create Your Profile
                 </span>
                 <br /> Sign up and fill in your details, including your
                 expertise, experience, and mentoring preferences.
               </p>
             </div>
-            <div className={styles.hiwStep}>
-              <p className={styles.hiwStepNumber}>2</p>
-              <p className={styles.hiwStepText}>
-                <span className={styles.hiwStepHeading}>
+            <div className={styles.tabStep}>
+              <p className={styles.tabStepNumber}>2</p>
+              <p className={styles.tabStepText}>
+                <span className={styles.tabStepHeading}>
                   Set Your Availability
                 </span>
                 <br /> Choose your preferred mentoring schedule and the times
                 that work best for you.
               </p>
             </div>
-            <div className={styles.hiwStep}>
-              <p className={styles.hiwStepNumber}>3</p>
-              <p className={styles.hiwStepText}>
-                <span className={styles.hiwStepHeading}>
+            <div className={styles.tabStep}>
+              <p className={styles.tabStepNumber}>3</p>
+              <p className={styles.tabStepText}>
+                <span className={styles.tabStepHeading}>
                   Connect with Mentees
                 </span>
                 <br /> Browse mentee requests or let mentees find you based on
                 your profile and expertise.
               </p>
             </div>
-            <div className={styles.hiwStep}>
-              <p className={styles.hiwStepNumber}>4</p>
-              <p className={styles.hiwStepText}>
-                <span className={styles.hiwStepHeading}>Start Mentoring</span>
+            <div className={styles.tabStep}>
+              <p className={styles.tabStepNumber}>4</p>
+              <p className={styles.tabStepText}>
+                <span className={styles.tabStepHeading}>Start Mentoring</span>
                 <br /> Once connected, begin guiding your mentees through
                 personalized sessions.
               </p>

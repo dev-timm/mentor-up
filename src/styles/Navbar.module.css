@@ -34,17 +34,21 @@ nav {
   gap: var(--height-size-xs, 24px);
 }
 
+.logo {
+  vertical-align: middle;
+}
+
 .navLink {
   color: var(--text-text-base, #14141a);
-  /* 💻 Paragraph/P3 */
   font-family: 'Noto Sans';
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 20px; /* 142.857% */
+  line-height: 20px;
   position: relative;
   display: inline-block;
-  padding-bottom: 3px; /* Space for the border */
+  padding-bottom: 3px;
+  text-decoration: none;
 }
 
 .navLink::after {
@@ -61,7 +65,7 @@ nav {
   transition: transform 0.3s ease;
 }
 
-.navLink:hover::after {
+.navLink:hover::after,
+.active::after {
   transform: scaleX(1);
-  transform-origin: bottom left;
 }
