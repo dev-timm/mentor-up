@@ -285,7 +285,11 @@ const Landing = () => {
       <section className={`${styles.newsletter} ${appStyles.container}`}>
         <h2 className={appStyles.centerText}>Join Our Newsletter</h2>
         <form className={styles.newsletterForm} onSubmit={handleSubmit}>
-          <input type="text" placeholder="Enter Email" />
+          <input
+            type="text"
+            placeholder="Enter Email"
+            onFocus={() => console.log('Input focused')}
+          />
           <button type="submit" className={btnStyles.btnSecondaryMedium}>
             Subscribe Now
           </button>
