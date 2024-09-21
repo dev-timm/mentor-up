@@ -11,5 +11,14 @@
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  gap: var(--height-size-xs, 24px);
+  align-content: flex-start;
+  gap: 24px var(--height-size-xs, 24px);
+  align-self: stretch;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 990px) {
+  .companyLogos {
+    padding: 0 40px;
+  }
 }
