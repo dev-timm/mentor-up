@@ -13,7 +13,6 @@ nav {
   align-items: center;
   background: var(--background-bg-main-container, #fff);
   border-radius: var(--border-radius-radius-sm, 8px);
-  margin: 0 16px;
 }
 
 .navMain {
@@ -67,4 +66,10 @@ nav {
 .navLink:hover::after,
 .active::after {
   transform: scaleX(1);
+}
+
+@media screen and (max-width: 1200px) {
+  .navContainer {
+    margin: 0 16px;
+  }
 }
