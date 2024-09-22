@@ -57,16 +57,16 @@
 
 /* WHY MENTORUP */
 
+.sectionBg {
+  background-color: var(--background-bg-subtle, #fafafa);
+}
+
 .uspSection {
   display: flex;
-  padding: 100px 148px;
+  padding: 100px 0;
   flex-direction: column;
   align-items: center;
   gap: 56px;
-  background-color: var(--background-bg-subtle, #fafafa);
-  margin-left: calc(-50vw + 50%);
-  margin-right: calc(-50vw + 50%);
-  width: 100vw; /* Ensure the background takes the full viewport width */
 }
 
 .uspItems {
@@ -77,10 +77,10 @@
 
 .uspItem {
   display: flex;
-  width: 320px;
   flex-direction: column;
   align-items: center;
   gap: 16px;
+  flex: 1 0 0;
 }
 
 .uspItemText {
@@ -219,7 +219,7 @@
 
 .userReviews {
   display: flex;
-  padding: 100px 148px;
+  padding: 100px 0;
   flex-direction: column;
   align-items: center;
   gap: 56px;
@@ -347,6 +347,10 @@
     font-weight: 400;
     line-height: 28px; /* 140% */
   }
+
+  .uspSection {
+    padding: 100px 40px;
+  }
 }
 
 @media screen and (max-width: 990px) {
@@ -371,5 +375,13 @@
 
   .heroImg {
     display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .uspItems {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }

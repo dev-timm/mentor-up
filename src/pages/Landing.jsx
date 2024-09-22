@@ -58,42 +58,52 @@ const Landing = () => {
 
       {/* WHY MENTORUP */}
 
-      <section className={`${appStyles.container} ${styles.uspSection}`}>
-        <h2 className={appStyles.centerText}>Why Choose MentorUp</h2>
-        <div className={styles.uspItems}>
-          <div className={styles.uspItem}>
-            <img src={personalizedGuidance} alt="personalized guidance" />
-            <div className={`${appStyles.centerText} ${styles.uspItemText}`}>
-              <h4>Personalized Guidance</h4>
-              <p className={appStyles.p2}>
-                Tailored advice from seasoned professionals who understand your
-                goals.
-              </p>
+      <section className={styles.sectionBg}>
+        <div className={appStyles.container}>
+          <div className={styles.uspSection}>
+            <h2 className={appStyles.centerText}>Why Choose MentorUp</h2>
+            <div className={styles.uspItems}>
+              <div className={styles.uspItem}>
+                <img src={personalizedGuidance} alt="personalized guidance" />
+                <div
+                  className={`${appStyles.centerText} ${styles.uspItemText}`}
+                >
+                  <h4>Personalized Guidance</h4>
+                  <p className={appStyles.p2}>
+                    Tailored advice from seasoned professionals who understand
+                    your goals.
+                  </p>
+                </div>
+              </div>
+              <div className={styles.uspItem}>
+                <img src={industryInsights} alt="industry insights" />
+                <div
+                  className={`${appStyles.centerText} ${styles.uspItemText}`}
+                >
+                  <h4>Industry Insights</h4>
+                  <p className={appStyles.p2}>
+                    Exclusive access to knowledge and trends from successful
+                    industry experts.
+                  </p>
+                </div>
+              </div>
+              <div className={styles.uspItem}>
+                <img src={flexibleLearning} alt="flexible learning" />
+                <div
+                  className={`${appStyles.centerText} ${styles.uspItemText}`}
+                >
+                  <h4>Flexible Learning</h4>
+                  <p className={appStyles.p2}>
+                    Convenient, on-demand sessions that fit your schedule.
+                  </p>
+                </div>
+              </div>
             </div>
-          </div>
-          <div className={styles.uspItem}>
-            <img src={industryInsights} alt="industry insights" />
-            <div className={`${appStyles.centerText} ${styles.uspItemText}`}>
-              <h4>Industry Insights</h4>
-              <p className={appStyles.p2}>
-                Exclusive access to knowledge and trends from successful
-                industry experts.
-              </p>
-            </div>
-          </div>
-          <div className={styles.uspItem}>
-            <img src={flexibleLearning} alt="flexible learning" />
-            <div className={`${appStyles.centerText} ${styles.uspItemText}`}>
-              <h4>Flexible Learning</h4>
-              <p className={appStyles.p2}>
-                Convenient, on-demand sessions that fit your schedule.
-              </p>
-            </div>
+            <NavLink to="/sign-up" className={btnStyles.btnPrimaryLarge}>
+              Start Your Journey <img src={arrowRight} alt="right arrow icon" />
+            </NavLink>
           </div>
         </div>
-        <NavLink to="/sign-up" className={btnStyles.btnPrimaryLarge}>
-          Start Your Journey <img src={arrowRight} alt="right arrow icon" />
-        </NavLink>
       </section>
 
       {/* HOW IT WORKS */}
