@@ -323,36 +323,7 @@
 
 /* NEWSLETTER END */
 
-@media screen and (max-width: 1200px) {
-  .heroContent {
-    display: flex;
-    padding: 100px 40px;
-    justify-content: center;
-    align-items: center;
-    gap: 80px;
-  }
-
-  .textContainer h1 {
-    font-size: 32px;
-    line-height: 36px; /* 112.5% */
-    letter-spacing: -0.64px;
-  }
-
-  .textContainer p {
-    font-size: 20px;
-    line-height: 28px; /* 140% */
-  }
-
-  .uspSection {
-    padding: 100px 40px;
-  }
-
-  .howItWorks {
-    padding: 100px 40px;
-  }
-}
-
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 1000px) {
   .heroContent {
     flex-direction: column;
     justify-content: center;
@@ -365,15 +336,32 @@
   }
 
   .textContainer h1 {
+    font-size: 32px;
+    line-height: 36px; /* 112.5% */
+    letter-spacing: -0.64px;
     text-align: center;
   }
 
   .textContainer p {
+    font-size: 20px;
     text-align: center;
+    line-height: 28px; /* 140% */
+  }
+
+  .uspSection {
+    padding: 100px 40px;
+  }
+
+  .howItWorks {
+    padding: 100px 40px;
   }
 
   .heroImg {
     display: none;
+  }
+
+  .userReviews {
+    padding: 100px 40px;
   }
 }
 
@@ -383,6 +371,19 @@
   }
   .tabSteps {
     width: 100%;
+  }
+
+  .reviewsContent {
+    flex-direction: column;
+    gap: 48px;
+  }
+
+  .userReview {
+    width: 100%;
+  }
+
+  .dividerLine {
+    display: none;
   }
 }
 
