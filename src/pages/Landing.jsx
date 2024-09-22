@@ -70,8 +70,8 @@ const Landing = () => {
                 >
                   <h4>Personalized Guidance</h4>
                   <p className={appStyles.p2}>
-                    Tailored advice from seasoned professionals who understand
-                    your goals.
+                    Advice from seasoned professionals who understand your
+                    goals.
                   </p>
                 </div>
               </div>

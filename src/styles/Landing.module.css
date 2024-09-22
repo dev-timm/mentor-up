@@ -95,7 +95,7 @@
 
 .howItWorks {
   display: flex;
-  padding: 100px 148px;
+  padding: 100px 0;
   flex-direction: column;
   align-items: center;
   gap: 56px;
@@ -112,7 +112,7 @@
 
 .tabs {
   display: flex;
-  align-items: flex-start;
+  justify-content: center;
   gap: 37px;
   align-self: stretch;
 }
@@ -210,7 +210,7 @@
 }
 
 .tabContent img {
-  width: 397px;
+  width: 40%;
 }
 
 /* HOW IT WORKS END */
@@ -339,16 +339,15 @@
   }
 
   .textContainer p {
-    color: var(--text-text-base, #14141a);
-    /* 💻 Paragraph/P1 */
-    font-family: 'Noto Sans';
     font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
     line-height: 28px; /* 140% */
   }
 
   .uspSection {
+    padding: 100px 40px;
+  }
+
+  .howItWorks {
     padding: 100px 40px;
   }
 }
@@ -375,6 +374,15 @@
 
   .heroImg {
     display: none;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .tabContent img {
+    display: none;
+  }
+  .tabSteps {
+    width: 100%;
   }
 }
 
