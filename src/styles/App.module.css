@@ -22,6 +22,10 @@ html {
   margin: 0 auto;
 }
 
+.sectionBg {
+  background-color: var(--background-bg-subtle, #fafafa);
+}
+
 /* GENERAL END */
 
 /* STYLES */

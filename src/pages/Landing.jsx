@@ -58,7 +58,7 @@ const Landing = () => {
 
       {/* WHY MENTORUP */}
 
-      <section className={styles.sectionBg}>
+      <section className={appStyles.sectionBg}>
         <div className={`${appStyles.container} ${styles.uspSection}`}>
           <h2 className={appStyles.centerText}>Why Choose MentorUp</h2>
           <div className={styles.uspItems}>

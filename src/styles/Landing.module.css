@@ -57,10 +57,6 @@
 
 /* WHY MENTORUP */
 
-.sectionBg {
-  background-color: var(--background-bg-subtle, #fafafa);
-}
-
 .uspSection {
   display: flex;
   padding: 100px 0;

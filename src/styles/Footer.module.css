@@ -1,17 +1,17 @@
 .footerContent {
   display: flex;
-  padding: var(--height-size-md, 40px) 148px;
+  padding: var(--height-size-md, 40px);
   justify-content: space-between;
   align-items: flex-end;
   align-self: stretch;
-  background: var(--background-bg-subtle, #fafafa);
-  margin-left: calc(-50vw + 50%);
-  margin-right: calc(-50vw + 50%);
-  width: 100vw; /* Ensure the background takes the full viewport width */
 }
 
 .footerIcons {
   display: flex;
   align-items: center;
   gap: 16px;
+}
+
+.footerIcons a img {
+  vertical-align: middle;
 }
