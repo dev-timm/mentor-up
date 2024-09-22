@@ -59,50 +59,41 @@ const Landing = () => {
       {/* WHY MENTORUP */}
 
       <section className={styles.sectionBg}>
-        <div className={appStyles.container}>
-          <div className={styles.uspSection}>
-            <h2 className={appStyles.centerText}>Why Choose MentorUp</h2>
-            <div className={styles.uspItems}>
-              <div className={styles.uspItem}>
-                <img src={personalizedGuidance} alt="personalized guidance" />
-                <div
-                  className={`${appStyles.centerText} ${styles.uspItemText}`}
-                >
-                  <h4>Personalized Guidance</h4>
-                  <p className={appStyles.p2}>
-                    Advice from seasoned professionals who understand your
-                    goals.
-                  </p>
-                </div>
-              </div>
-              <div className={styles.uspItem}>
-                <img src={industryInsights} alt="industry insights" />
-                <div
-                  className={`${appStyles.centerText} ${styles.uspItemText}`}
-                >
-                  <h4>Industry Insights</h4>
-                  <p className={appStyles.p2}>
-                    Exclusive access to knowledge and trends from successful
-                    industry experts.
-                  </p>
-                </div>
-              </div>
-              <div className={styles.uspItem}>
-                <img src={flexibleLearning} alt="flexible learning" />
-                <div
-                  className={`${appStyles.centerText} ${styles.uspItemText}`}
-                >
-                  <h4>Flexible Learning</h4>
-                  <p className={appStyles.p2}>
-                    Convenient, on-demand sessions that fit your schedule.
-                  </p>
-                </div>
+        <div className={`${appStyles.container} ${styles.uspSection}`}>
+          <h2 className={appStyles.centerText}>Why Choose MentorUp</h2>
+          <div className={styles.uspItems}>
+            <div className={styles.uspItem}>
+              <img src={personalizedGuidance} alt="personalized guidance" />
+              <div className={`${appStyles.centerText} ${styles.uspItemText}`}>
+                <h4>Personalized Guidance</h4>
+                <p className={appStyles.p2}>
+                  Advice from seasoned professionals who understand your goals.
+                </p>
               </div>
             </div>
-            <NavLink to="/sign-up" className={btnStyles.btnPrimaryLarge}>
-              Start Your Journey <img src={arrowRight} alt="right arrow icon" />
-            </NavLink>
+            <div className={styles.uspItem}>
+              <img src={industryInsights} alt="industry insights" />
+              <div className={`${appStyles.centerText} ${styles.uspItemText}`}>
+                <h4>Industry Insights</h4>
+                <p className={appStyles.p2}>
+                  Exclusive access to knowledge and trends from successful
+                  industry experts.
+                </p>
+              </div>
+            </div>
+            <div className={styles.uspItem}>
+              <img src={flexibleLearning} alt="flexible learning" />
+              <div className={`${appStyles.centerText} ${styles.uspItemText}`}>
+                <h4>Flexible Learning</h4>
+                <p className={appStyles.p2}>
+                  Convenient, on-demand sessions that fit your schedule.
+                </p>
+              </div>
+            </div>
           </div>
+          <NavLink to="/sign-up" className={btnStyles.btnPrimaryLarge}>
+            Start Your Journey <img src={arrowRight} alt="right arrow icon" />
+          </NavLink>
         </div>
       </section>
 
@@ -292,18 +283,20 @@ const Landing = () => {
 
       {/* NEWSLETTER */}
 
-      <section className={`${styles.newsletter} ${appStyles.container}`}>
-        <h2 className={appStyles.centerText}>Join Our Newsletter</h2>
-        <form className={styles.newsletterForm} onSubmit={handleSubmit}>
-          <input
-            type="text"
-            placeholder="Enter Email"
-            onFocus={() => console.log('Input focused')}
-          />
-          <button type="submit" className={btnStyles.btnSecondaryMedium}>
-            Subscribe Now
-          </button>
-        </form>
+      <section className={styles.newsletterBg}>
+        <div className={`${styles.newsletter} ${appStyles.container}`}>
+          <h2 className={appStyles.centerText}>Join Our Newsletter</h2>
+          <form className={styles.newsletterForm} onSubmit={handleSubmit}>
+            <input
+              type="text"
+              placeholder="Enter Email"
+              onFocus={() => console.log('Input focused')}
+            />
+            <button type="submit" className={btnStyles.btnSecondaryMedium}>
+              Subscribe Now
+            </button>
+          </form>
+        </div>
       </section>
     </>
   );
