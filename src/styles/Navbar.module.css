@@ -9,10 +9,17 @@ nav {
 .navContainer {
   display: flex;
   padding: var(--height-size-xs, 24px);
-  justify-content: space-between;
+  gap: 56px;
   align-items: center;
   background: var(--background-bg-main-container, #fff);
   border-radius: var(--border-radius-radius-sm, 8px);
+}
+
+.linksContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 60px;
 }
 
 .navMain {
@@ -35,6 +42,10 @@ nav {
 
 .logo {
   vertical-align: middle;
+}
+
+.navToggle {
+  display: none;
 }
 
 .navLink {
@@ -71,5 +82,54 @@ nav {
 @media screen and (max-width: 1200px) {
   .navContainer {
     margin: 0 16px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navContainer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+    padding: var(--height-size-xs, 16px) 24px;
+  }
+
+  .navToggle {
+    display: flex;
+  }
+
+  .linksContainer {
+    flex-direction: column;
+  }
+
+  .navMain {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navLinks {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    margin-top: 16px;
+  }
+
+  .navAction {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  /* 184px */
+
+  .linksContainer {
+    height: 0;
+    overflow: hidden;
+    transition: 0.3s ease-in-out all;
+  }
+
+  .showContainer {
+    height: 184px;
   }
 }

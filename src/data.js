@@ -24,6 +24,19 @@ import eCollins from './assets/mentees/mentee-emma-collins.png';
 import lDavis from './assets/mentees/mentee-liam-davis.png';
 import oMartinez from './assets/mentees/mentee-olivia-martinez.png';
 
+export const navLinks = [
+  {
+    id: 1,
+    url: '/find-mentor',
+    text: ' Find Mentor',
+  },
+  {
+    id: 2,
+    url: '/become-mentor',
+    text: 'Become Mentor',
+  },
+];
+
 export const logos = [
   {
     id: 1,
