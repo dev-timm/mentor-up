@@ -9,12 +9,7 @@ const Questions = ({ questions }) => {
     <section className={`${appStyles.container} ${styles.questions}`}>
       <h2>Frequently Asked Questions</h2>
       {questions.map((question) => {
-        return (
-          <>
-            <SingleQuestion key={question.id} {...question} />
-            <div className={styles.divider}></div>
-          </>
-        );
+        return <SingleQuestion key={question.id} {...question} />;
       })}
     </section>
   );

@@ -2,8 +2,10 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 8px;
+  /* gap: 8px; */
   align-self: stretch;
+  padding: 24px 0;
+  border-bottom: 1px solid #dedee5;
 }
 
 .questionHeader {

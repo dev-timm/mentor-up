@@ -18,9 +18,3 @@
   align-items: flex-start;
   gap: var(--height-size-xs, 24px);
 }
-
-.divider {
-  width: 100%;
-  height: 1px;
-  background: var(--icon-icon-inactive, #dedee5);
-}
