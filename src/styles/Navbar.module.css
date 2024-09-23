@@ -44,10 +44,6 @@ nav {
   vertical-align: middle;
 }
 
-.navToggle {
-  display: none;
-}
-
 .navLink {
   color: var(--text-text-base, #14141a);
   font-family: 'Noto Sans';
@@ -79,6 +75,10 @@ nav {
   transform: scaleX(1);
 }
 
+.navToggle {
+  display: none;
+}
+
 @media screen and (max-width: 1200px) {
   .navContainer {
     margin: 0 16px;
@@ -95,6 +95,15 @@ nav {
 
   .navToggle {
     display: flex;
+    width: var(--height-size-sm, 32px);
+    height: var(--height-size-sm, 32px);
+    padding: 8px var(--padding-padding--sm, 8px);
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    background: none;
+    border: none;
+    cursor: pointer;
   }
 
   .linksContainer {

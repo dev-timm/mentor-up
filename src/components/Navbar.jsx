@@ -7,13 +7,31 @@ import { navLinks } from '../data';
 
 import logo from '../assets/logo.svg';
 import mobileMenu from '../assets/icons/burger-menu.svg';
-import { useState } from 'react';
+import { useRef, useState, useEffect } from 'react';
 
 const Navbar = () => {
   const [showLinks, setShowLinks] = useState(false);
+  const menuRef = useRef(null);
 
   const toggleLinks = () => {
-    setShowLinks(!showLinks);
+    setShowLinks((prev) => !prev);
+  };
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        setShowLinks(false);
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [menuRef]);
+
+  const handleLinkClick = () => {
+    setShowLinks(false);
   };
 
   return (
@@ -24,14 +42,12 @@ const Navbar = () => {
             <NavLink to="/">
               <img src={logo} className={styles.logo} alt="logo" />
             </NavLink>
-            <button
-              className={`${styles.navToggle} ${btnStyles.iconBtnSmallTransparent}`}
-              onClick={toggleLinks}
-            >
+            <button className={`${styles.navToggle}`} onClick={toggleLinks}>
               <img src={mobileMenu} alt="mobile menu icon" />
             </button>
           </div>
           <div
+            ref={menuRef}
             className={
               showLinks
                 ? `${styles.linksContainer} ${styles.showContainer}`
@@ -48,6 +64,7 @@ const Navbar = () => {
                     className={({ isActive }) =>
                       `${styles.navLink} ${isActive ? styles.active : ''}`
                     }
+                    onClick={handleLinkClick}
                   >
                     {text}
                   </NavLink>
@@ -60,10 +77,15 @@ const Navbar = () => {
                 className={({ isActive }) =>
                   `${styles.navLink} ${isActive ? styles.active : ''}`
                 }
+                onClick={handleLinkClick}
               >
                 Sign In
               </NavLink>
-              <NavLink to="/sign-up" className={btnStyles.btnPrimaryMedium}>
+              <NavLink
+                to="/sign-up"
+                className={btnStyles.btnPrimaryMedium}
+                onClick={handleLinkClick}
+              >
                 Sign Up
               </NavLink>
             </div>
