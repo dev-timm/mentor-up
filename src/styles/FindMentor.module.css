@@ -9,7 +9,7 @@
 
 .heroContent {
   display: flex;
-  padding: 100px 148px;
+  padding: 100px 0;
   flex-direction: column;
   align-items: center;
   align-self: stretch;
@@ -34,7 +34,7 @@
 }
 
 .heroImg {
-  width: 1040px;
+  max-width: 100%;
 }
 
 /* HERO END */
@@ -156,3 +156,24 @@
 }
 
 /* MEET OUR MENTORS END */
+
+@media screen and (max-width: 600px) {
+  .hero {
+    background-image: none;
+    background-color: #f0f7fc;
+  }
+
+  .heroContent {
+    padding: 40px 40px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .heroImg {
+    display: none;
+  }
+
+  .heroContent {
+    gap: 16px;
+  }
+}

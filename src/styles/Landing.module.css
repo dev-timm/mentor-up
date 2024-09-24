@@ -383,6 +383,15 @@
 }
 
 @media screen and (max-width: 600px) {
+  .hero {
+    background-image: none;
+    background-color: #fcf2e3;
+  }
+
+  .heroContent {
+    padding: 40px 0px;
+  }
+
   .uspItems {
     flex-direction: column;
     justify-content: center;
