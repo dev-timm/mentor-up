@@ -43,18 +43,19 @@
 
 .topCategories {
   display: flex;
-  padding: 100px 148px;
+  padding: 100px 0;
   flex-direction: column;
   align-items: center;
-  gap: 56px;
   align-self: stretch;
+  gap: 56px;
+  flex-wrap: wrap;
 }
 
 .categories {
   display: flex;
-  justify-content: space-between;
   align-items: flex-start;
   align-content: flex-start;
+  justify-content: space-between;
   row-gap: 28px;
   align-self: stretch;
   flex-wrap: wrap;
@@ -62,7 +63,6 @@
 
 .category {
   display: flex;
-  width: 184px;
   flex-direction: column;
   align-items: flex-start;
   gap: 8px;
@@ -156,6 +156,19 @@
 }
 
 /* MEET OUR MENTORS END */
+
+@media screen and (max-width: 1000px) {
+  .topCategories {
+    padding: 100px 40px;
+  }
+}
+
+@media screen and (max-width: 753px) {
+  .categories {
+    justify-content: center;
+    gap: 24px;
+  }
+}
 
 @media screen and (max-width: 600px) {
   .hero {
