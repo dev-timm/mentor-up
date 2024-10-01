@@ -10,7 +10,6 @@ import LeadingCompanies from '../components/LeadingCompanies';
 import { topCategories } from '../data';
 import { NavLink } from 'react-router-dom';
 
-import { mentorList } from '../data';
 import { useState } from 'react';
 
 import { customerQuestions } from '../data';
