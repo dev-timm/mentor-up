@@ -86,7 +86,7 @@ const BecomeMentor = () => {
             <img src={checklistCheck} alt="checklist icon" />
             <p className={appStyles.p1}>
               Professional Achievements: A track record of success in your
-              career or entrepreneurial ventures.
+              career.
             </p>
           </div>
           <div className={styles.checklistItem}>
@@ -113,8 +113,8 @@ const BecomeMentor = () => {
           <div className={styles.checklistItem}>
             <img src={checklistCheck} alt="checklist icon" />
             <p className={appStyles.p1}>
-              Willingness to Share: Openness to discussing challenges,
-              successes, and lessons learned.
+              Willingness to Share: Openness to discussing challenges and
+              lessons learned.
             </p>
           </div>
         </div>

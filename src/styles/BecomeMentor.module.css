@@ -40,8 +40,6 @@
 
 /* MENTOR CHECKLIST */
 
-/* MENTOR CHECKLIST END */
-
 .mentorChecklist {
   display: flex;
   padding: 100px 0;
@@ -61,11 +59,12 @@
 
 .checklistItem {
   display: flex;
-  width: 570px;
-  max-width: 600px;
+  width: 464px;
   align-items: center;
   gap: 16px;
 }
+
+/* MENTOR CHECKLIST END */
 
 /* MEET OUR MENTEES */
 
@@ -180,6 +179,16 @@
 
   .heroImg {
     display: none;
+  }
+}
+
+@media screen and (max-width: 971px) {
+  .checklistItem {
+    width: 100%;
+  }
+
+  .mentorChecklist {
+    padding: 100px 40px;
   }
 }
 
