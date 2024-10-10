@@ -9,18 +9,16 @@
 
 .heroContent {
   display: flex;
-  padding: 100px 148px;
+  padding: 100px 0;
   align-items: center;
-  align-self: stretch;
 }
 
 .heroImg {
-  width: 520px;
+  max-width: 50%;
 }
 
 .heroInfo {
   display: flex;
-  width: 551px;
   flex-direction: column;
   align-items: flex-start;
   gap: var(--height-size-md, 40px);
@@ -31,7 +29,6 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 16px;
-  align-self: stretch;
 }
 
 .textContainer h1 span {
@@ -151,3 +148,48 @@
 }
 
 /* MEET OUR MENTEES END */
+
+@media screen and (max-width: 1000px) {
+  .heroContent {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .heroInfo {
+    align-items: center;
+  }
+
+  .textContainer {
+    align-items: center;
+    max-width: 80%;
+  }
+
+  .textContainer h1 {
+    font-size: 32px;
+    line-height: 36px; /* 112.5% */
+    letter-spacing: -0.64px;
+    text-align: center;
+  }
+
+  .textContainer p {
+    font-size: 20px;
+    text-align: center;
+    line-height: 28px; /* 140% */
+  }
+
+  .heroImg {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .hero {
+    background-image: none;
+    background-color: #fcf2f0;
+  }
+
+  .heroContent {
+    padding: 40px 0px;
+  }
+}

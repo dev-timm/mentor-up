@@ -61,7 +61,8 @@ const BecomeMentor = () => {
               </p>
             </div>
             <NavLink to="/sign-up" className={btnStyles.btnPrimaryLarge}>
-              Find your Mentor <img src={arrowRight} alt="right arrow icon" />
+              Apply to Be a Mentor{' '}
+              <img src={arrowRight} alt="right arrow icon" />
             </NavLink>
           </div>
         </div>
