@@ -122,8 +122,8 @@ export const mentorList = [
   {
     id: 1,
     name: `Alexandra Clark`,
-    position: 'Senior Marketing Strategist',
-    experience:
+    experience: 'Senior Marketing Strategist',
+    background:
       'Jane has over 15 years of experience in digital marketing, specializing in brand development and strategic campaigns for Fortune 500 companies.',
     reason:
       'I’m passionate about helping others navigate the complexities of marketing and achieve their career goals. Seeing my mentees succeed is incredibly rewarding.',
@@ -132,8 +132,8 @@ export const mentorList = [
   {
     id: 2,
     name: `David Turner`,
-    position: 'Data Science Expert',
-    experience:
+    experience: 'Data Science Expert',
+    background:
       'David has over 10 years of experience in data science and machine learning, leading projects for top tech companies and mentoring professionals transitioning into the field.',
     reason:
       'I love sharing my knowledge and helping others build the technical skills needed to succeed in data science. Watching my mentees grow gives me great satisfaction.',
@@ -142,8 +142,8 @@ export const mentorList = [
   {
     id: 3,
     name: `Emily Carter`,
-    position: 'Leadership Development Coach',
-    experience:
+    experience: 'Leadership Development Coach',
+    background:
       'With over 12 years of experience in corporate leadership training, Emily has coached executives and managers across industries to enhance their leadership skills and team performance.',
     reason:
       'I’m passionate about helping leaders unlock their full potential. Watching my mentees grow into confident, capable leaders is the most fulfilling part of mentoring.',
@@ -152,8 +152,8 @@ export const mentorList = [
   {
     id: 4,
     name: `Robert Baker `,
-    position: 'Product Management Expert',
-    experience:
+    experience: 'Product Management Expert',
+    background:
       'Robert has over 8 years of experience in product management, leading successful product launches at both tech startups and large corporations.',
     reason:
       'I mentor because I believe in sharing practical knowledge that helps aspiring product managers build successful careers and impactful products.',
@@ -165,7 +165,7 @@ export const menteeList = [
   {
     id: 1,
     name: `Olivia Martinez`,
-    mentorship:
+    experience:
       'Leadership Development, Team Management, Strategic Decision-Making',
     background:
       'Olivia is an experienced HR professional stepping into a leadership role. She sought mentorship to develop her leadership style and effectively manage cross-functional teams.',
@@ -176,7 +176,7 @@ export const menteeList = [
   {
     id: 2,
     name: `Liam Davis`,
-    mentorship: 'Data Science, Machine Learning, Big Data Analytics',
+    experience: 'Data Science, Machine Learning, Big Data Analytics',
     background:
       'Liam is an entry-level data analyst passionate about transitioning into data science. He sought mentorship to gain expertise in machine learning and advance his career in the tech industry.',
     reason:
@@ -186,7 +186,7 @@ export const menteeList = [
   {
     id: 3,
     name: `Emma Collins`,
-    mentorship: 'Entrepreneurship, Business Strategy, Marketing',
+    experience: 'Entrepreneurship, Business Strategy, Marketing',
     background:
       'Emma is a small business owner looking to expand her company. She sought mentorship to refine her business strategy and marketing approach for scaling her operations.',
     reason:
@@ -196,7 +196,7 @@ export const menteeList = [
   {
     id: 4,
     name: `Daniel Rodriguez`,
-    mentorship: 'Software Engineering, Coding Best Practices, Career Growth',
+    experience: 'Software Engineering, Coding Best Practices, Career Growth',
     background:
       'Daniel is a self-taught developer looking to advance his career in software engineering. With a solid foundation in programming, he sought mentorship to improve his coding practices and navigate the tech industry.',
     reason:

@@ -4,24 +4,21 @@ import styles from '../styles/UserCarousel.module.css';
 import appStyles from '../styles/App.module.css';
 import btnStyles from '../styles/Button.module.css';
 
-import { mentorList } from '../data';
-
 import chevronRight from '../assets/icons/chevron-right.svg';
 import chevronLeft from '../assets/icons/chevron-left.svg';
 
-const UserCarousel = () => {
-  const [mentors, setMentors] = useState(mentorList);
+const UserCarousel = ({ users }) => {
   const [currentMentor, setCurrentMentor] = useState(0);
 
   const prevSLide = () => {
     setCurrentMentor((oldMentor) => {
-      const result = (oldMentor - 1 + mentors.length) % mentors.length;
+      const result = (oldMentor - 1 + users.length) % users.length;
       return result;
     });
   };
   const nextSLide = () => {
     setCurrentMentor((oldMentor) => {
-      const result = (oldMentor + 1) % mentors.length;
+      const result = (oldMentor + 1) % users.length;
       return result;
     });
   };
@@ -40,8 +37,8 @@ const UserCarousel = () => {
       <div className={appStyles.container}>
         <h2 className={appStyles.centerText}>Meet Our Mentors</h2>
         <div className={styles.carouselContainer}>
-          {mentors.map((mentor, mentorIndex) => {
-            const { id, name, position, experience, reason, image } = mentor;
+          {users.map((mentor, mentorIndex) => {
+            const { id, name, background, experience, reason, image } = mentor;
             return (
               <article
                 className={styles.slide}
@@ -62,12 +59,12 @@ const UserCarousel = () => {
                     <p className={appStyles.p2}>{name}</p>
                   </div>
                   <div className={styles.text}>
-                    <h5>Position</h5>
-                    <p className={appStyles.p2}>{position}</p>
-                  </div>
-                  <div className={styles.text}>
                     <h5>Experience</h5>
                     <p className={appStyles.p2}>{experience}</p>
+                  </div>
+                  <div className={styles.text}>
+                    <h5>Background</h5>
+                    <p className={appStyles.p2}>{background}</p>
                   </div>
                   <div className={styles.text}>
                     <h5>Why Become a Mentor</h5>

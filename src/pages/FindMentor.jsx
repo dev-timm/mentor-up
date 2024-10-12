@@ -16,8 +16,11 @@ import { customerQuestions } from '../data';
 import Questions from '../components/Questions';
 import UserCarousel from '../components/UserCarousel';
 
+import { mentorList } from '../data';
+
 const FindMentor = () => {
   const [questions, setQuestions] = useState(customerQuestions);
+  const [users, setUsers] = useState(mentorList);
 
   return (
     <>
@@ -64,7 +67,7 @@ const FindMentor = () => {
         </NavLink>
       </section>
 
-      <UserCarousel />
+      <UserCarousel users={users} />
 
       <Questions questions={questions} />
     </>
