@@ -98,7 +98,7 @@ const BecomeMentor = () => {
         </div>
       </section>
 
-      <UserCarousel users={users} />
+      <UserCarousel users={users} title="Meet Our Mentees" />
       <Questions questions={questions} />
     </>
   );

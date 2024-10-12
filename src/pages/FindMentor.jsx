@@ -67,7 +67,7 @@ const FindMentor = () => {
         </NavLink>
       </section>
 
-      <UserCarousel users={users} />
+      <UserCarousel users={users} title="Meet Our Mentors" />
 
       <Questions questions={questions} />
     </>
